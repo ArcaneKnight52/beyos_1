@@ -1,0 +1,144 @@
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navbar */
+.navbar {
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100px;
+  background-color: #1e4d5e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;
+  z-index: 1; /* Ensure the navbar is on top */
+}
+
+/* Navbar Links */
+.navbar-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  width: 100%;
+}
+
+.navbar-links a {
+  width: calc(100% - 20px);
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  color: #fff; /* Set text color for navbar links */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.navbar-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Add background color on hover */
+}
+
+.navbar-links img {
+  width: 50px;
+}
+
+.navbar-links a:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* Top Section */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0px;
+  margin-top: 70px;
+  margin-bottom: 20px; /* Add some spacing between top and bottom sections */
+}
+
+.back-button {
+  position: absolute;
+  left: 110px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.top img {
+  width: 50px;
+  height: auto;
+}
+
+/* Bottom Section */
+.bottom {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+  width: 100%;
+  max-width: 1200px; /* Set a maximum width for the content */
+}
+
+.bottom-left {
+  width: 60%; /* Adjust this value to control the width of the left section */
+}
+
+.bottom-right {
+  width: 35%; /* Adjust this value to control the width of the right section */
+  display: flex;
+  flex-direction: column; /* Stack c1 and c2 vertically */
+  align-items: flex-end; /* Align c1 and c2 to the right */
+}
+
+/* Form Styling */
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-gap: 20px; /* Adjust the gap between form elements */
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form label {
+  margin-bottom: 5px; /* Add some spacing between label and input */
+  font-weight: bold;
+}
+
+.form input,
+.form select {
+  padding: 8px; /* Add some padding to inputs and selects */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 4px; /* Add some border radius */
+}
+
+.form input[type="submit"] {
+  background-color: #1e4d5e; /* Set background color for submit button */
+  color: #fff; /* Set text color for submit button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.form input[type="submit"]:hover {
+  background-color: #163b46; /* Change background color on hover */
+}
+
+.c1 img,
+.c2 img {
+  width: 0%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
